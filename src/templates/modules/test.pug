@@ -1,0 +1,18 @@
+mixin test(text)
+  div
+    img.test-star(src="img/star.png")
+    p= text
+
+section.test
+  .test-logo
+    p logo
+  ul.test-lists
+    each num in [1111,222,333]
+      li= num
+  section
+    each text in ['aaa','bbb']
+      p= text
+section
+  each text in ['number1','number2']
+    +test(text)
+      
