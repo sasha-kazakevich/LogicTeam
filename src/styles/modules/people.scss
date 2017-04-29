@@ -1,0 +1,61 @@
+section,div{
+	padding: 0;
+	//border: 2px solid green;
+	//height: 812px;
+}
+section .people-block{
+	
+}
+.content-people,.bg-image{
+	position: relative;
+
+}
+.content-people{
+	position: relative;
+	top: -812px;
+}
+.names{
+	text-align: center;
+	height: 812px;
+	//background: url("../../img/background.png");
+}
+.bg-image{
+	height: 812px;
+	background: url("../../img/background.png");
+	background-repeat: no-repeat;
+}
+#about{
+	width: 100%;
+	background-color: #0045A5;
+	//outline: none;
+	color: white;
+	height: 62px;
+	position: relative;
+	margin-top: 576px;
+	font-size: 17px;
+}
+#about div{
+	top:25%;
+}
+#about:hover {
+	background-color: #ff0000;
+}
+
+
+.text-container{
+	padding :0;
+	top: 125px;
+	color: #0045A5;
+	font-weight: bold;
+	
+}
+.text-container .number{
+	font-size: 45px;
+}
+.text-container .text{
+	font-size: 13px;
+	
+}
+.text{
+	text-transform: uppercase;
+}
