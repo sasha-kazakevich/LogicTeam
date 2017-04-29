@@ -1,0 +1,13 @@
+.test {
+    display: flex;
+    justify-content: space-between;
+
+    &-logo p { color: red;}
+
+    &-lists { border: 1px solid; }
+
+}
+
+.test-star {
+    width: 250px
+}
