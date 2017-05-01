@@ -1,0 +1,32 @@
+mixin sfers_column(imgs,names)
+	div.col-md-4.sfers-column
+		div.col-md-12.sfers-item
+			div.col-md-2
+				image(src='../../img/sfers-img-'+imgs[0]+'.png')
+			div.col-md-10
+				span.sfers-name=names[0]
+		div.col-md-12.sfers-item
+			div.col-md-2
+				image(src='../../img/sfers-img-'+imgs[1]+'.png')
+			div.col-md-10
+				span.sfers-name=names[1]
+		div.col-md-12.sfers-item
+			div.col-md-2
+				image(src='../../img/sfers-img-'+imgs[2]+'.png')
+			div.col-md-10
+				span.sfers-name=names[2]
+		div.col-md-12.sfers-item
+			div.col-md-2
+				image(src='../../img/sfers-img-'+imgs[3]+'.png')
+			div.col-md-10
+				span.sfers-name=names[3]
+
+
+section.sfers-block
+		div.col-md-12.sfers-title
+			span сферы деятельности
+		div.col-md-12
+			+sfers_column(['1','4','7','10'],['Автомобильная','Алкогольная','Деревообрабатывающая','Индустрия моды'])
+			+sfers_column(['2','5','8','11'],['Машиностроение	','Оптово и розничная торговля','Сельхоз техника','Техника и электроника'])
+			+sfers_column(['3','6','9','12'],['Товары народного потребления','Фармацевтическая','Химическая','Целлюлозно-бумажная'])
+		
