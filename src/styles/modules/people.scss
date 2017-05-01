@@ -1,61 +1,40 @@
-section,div{
-	padding: 0;
-	//border: 2px solid green;
-	//height: 812px;
-}
-section .people-block{
-	
-}
-.content-people,.bg-image{
+.people-block{
 	position: relative;
-
 }
-.content-people{
-	position: relative;
-	top: -812px;
+.people-block .background{
+	position: absolute;
+	display: inline-block;
 }
-.names{
-	text-align: center;
-	height: 812px;
-	//background: url("../../img/background.png");
+.people-block .background img{
+	width: 1140px;
 }
-.bg-image{
-	height: 812px;
-	background: url("../../img/background.png");
-	background-repeat: no-repeat;
+.people-block .people-column{
+	padding-top: 80px;
 }
-#about{
-	width: 100%;
-	background-color: #0045A5;
-	//outline: none;
-	color: white;
-	height: 62px;
-	position: relative;
-	margin-top: 576px;
-	font-size: 17px;
+.people-block .people-column .name{
+	padding-top: 25px;
 }
-#about div{
-	top:25%;
-}
-#about:hover {
-	background-color: #ff0000;
-}
-
-
-.text-container{
-	padding :0;
-	top: 125px;
-	color: #0045A5;
+.people-block .number{
 	font-weight: bold;
-	
+	font-size: 46px;
+	color:#3350B9;
 }
-.text-container .number{
-	font-size: 45px;
-}
-.text-container .text{
-	font-size: 13px;
-	
-}
-.text{
+.people-block .name{
 	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 14px;
+	color:#3350B9;
+}
+.people-block .people-button{
+	padding: 0;
+	padding-top: 350px;
+}
+.people-block .people-button .btn{
+	background-color: #0045A5;
+	font-size: 14px;
+}
+
+.people-block .people-button .btn:hover {
+	background-color: #2ECC71;
+	color: #0045A5;
 }
