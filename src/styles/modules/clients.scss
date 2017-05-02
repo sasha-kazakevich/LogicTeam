@@ -1,0 +1,34 @@
+.clients-block {
+    h2 {
+        color: #1A2E35;
+        text-transform: uppercase;
+        margin-bottom: 60px;
+            @media screen and (max-width: 320px) {
+                    font-size: 16px;
+                    font-weight: bold;
+                    margin-bottom: 30px;
+            }
+    }
+    ul {
+        li {
+            @media screen and (max-width: 320px) {
+                        float: none;
+                        padding: 0;
+                        width: 30%;
+            }
+            a {
+                img {
+                    margin-top: 60px; 
+                        @media screen and (max-width: 320px) {
+                                width: 50%;
+                                margin: 25px 10px;
+                        }
+                }
+            } 
+        }
+        .ones {
+            padding-top: 15%;
+        }
+    }
+}
+
