@@ -1,0 +1,40 @@
+.people-block{
+	position: relative;
+}
+.people-block .background{
+	position: absolute;
+	display: inline-block;
+}
+.people-block .background img{
+	width: 1140px;
+}
+.people-block .people-column{
+	padding-top: 80px;
+}
+.people-block .people-column .name{
+	padding-top: 25px;
+}
+.people-block .number{
+	font-weight: bold;
+	font-size: 46px;
+	color:#3350B9;
+}
+.people-block .name{
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 14px;
+	color:#3350B9;
+}
+.people-block .people-button{
+	padding: 0;
+	padding-top: 350px;
+}
+.people-block .people-button .btn{
+	background-color: #0045A5;
+	font-size: 14px;
+}
+
+.people-block .people-button .btn:hover {
+	background-color: #2ECC71;
+	color: #0045A5;
+}
