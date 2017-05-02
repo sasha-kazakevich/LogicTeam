@@ -1,0 +1,11 @@
+section.feedback-block
+  h2 Отзывы
+  div.feedback
+    mixin feed(file, alt)
+        img(src="../../img/images/" + file alt=alt class!=attributes.class)
+    +feed("feedback.png", "feedback")
+    +feed("feedback.png", "feedback")
+    +feed("feedback.png", "feedback")(class="three")
+    +feed("feedback.png", "feedback")
+    +feed("feedback.png", "feedback")
+    +feed("feedback.png", "feedback")
