@@ -1,0 +1,42 @@
+.service-block{
+	height: 472px;
+	border: 1px solid #E8EBF7;
+}
+.service-block div{
+	//border: 1px solid #E8EBF7;
+	padding: 0;
+}
+.service-block div{
+	list-style-type: none;
+	text-align: center;
+}
+.service-block ul{
+	position: relative;
+	display: table;
+}
+
+.service-block .item1{
+
+	//display: table-cell;
+
+	padding-top: 95px;
+}
+.service-block .item2{
+	padding-top: 110px;
+
+
+}
+.service-block .item3{
+	padding-top: 50px;
+}
+.service-block .name{
+	text-transform: uppercase;
+	color: #0045A5;
+	font-weight: bold;
+}
+.service-block .descript{
+	color: #79CFFB;
+	//font-weight: bold;
+}
+
+
