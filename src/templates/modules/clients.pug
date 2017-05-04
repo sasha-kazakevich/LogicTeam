@@ -1,20 +1,22 @@
-section.clients-block
-        h2 Клиенты   
-        div.clients
-            ul.list-inline
-                mixin client(file, alt)
-                    li.col-lg-2.col-xs-4: a(href="#"): img(src="../../img/clients_img/" + file alt=alt class!=attributes.class)
-                +client("1.png", "one")(class="ones")
-                +client("2.png", "two")
-                +client("3.png", "three")(class="ones")
-                +client("4.png", "four")(class="ones")
-                +client("5.png", "five")
-                +client("6.png", "six")
-                +client("7.png", "seven")(class="ones")
-                +client("8.png", "eight")(class="ones")
-                +client("9.png", "nine")(class="ones")
-                +client("10.png", "ten")(class="ones")
-                +client("11.png", "eleven")
-                +client("12.png", "twelve")(class="ones")
+mixin client(file, alt)
+    li.col-lg-2.col-xs-4: a(href="#"): img(src="../../img/clients_img/" + file alt=alt class!=attributes.class)
+
+section.container
+  section.clients-block.info-block
+    h2 Клиенты
+    ul.list-inline
+        +client("1.png", "one")(class="ones")
+        +client("2.png", "two")
+        +client("3.png", "three")(class="ones")
+        +client("4.png", "four")(class="ones")
+        +client("5.png", "five")
+        +client("6.png", "six")
+    ul.list-inline
+        +client("7.png", "seven")(class="ones")
+        +client("8.png", "eight")(class="ones")
+        +client("9.png", "nine")(class="ones")
+        +client("10.png", "ten")(class="ones")
+        +client("11.png", "eleven")
+        +client("12.png", "twelve")(class="ones")
 
                 

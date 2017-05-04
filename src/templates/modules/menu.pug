@@ -1,2 +1,31 @@
-section.menu-block
-  h1 Hello menu
+section.container-fluid.menu-block
+  section.container
+    section.menu-block-menu
+      div.menu-logo
+        img(src="img/menu-block/logo.png" alt="logo")
+        div.menu-logo-text
+          p.medium ТВ Логистик
+          p Ваш надежный партнер!
+      nav
+        ul.menu-menu
+          each text in ['Главная','Направления','Услуги','О нас','Вакансии','Онлайн-сервисы','Контакты']
+            li
+              a(href="#")= text
+      div.menu-lang
+        p en
+    section.menu-block-button
+      button.btnm(type="button")
+        span ЗАПРОС НА <br/> ПЕРЕВОЗКУ ГРУЗА
+    section.menu-block-footer
+      section.footer-info
+        p
+          span.glyphicon.glyphicon-earphone.footer-info-icon
+          | +375 (17) 218 33 26
+        p
+          span.glyphicon.glyphicon-envelope.footer-info-icon
+          | info@tvlogistic.by 
+      section.footer-adress
+        p.light ООО «ТВ Логистик»
+        p 
+          span.glyphicon.glyphicon-map-marker.footer-info-icon
+          | Республика Беларусь, Минск ул. Фабрициуса, 8Б, корп.1, пом.2, каб.42

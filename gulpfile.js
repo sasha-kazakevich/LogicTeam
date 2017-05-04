@@ -97,7 +97,6 @@ gulp.task('images', function () {
 gulp.task('fonts', function () {
   gulp.src(config.fonts.src)
     .pipe(gulp.dest(config.fonts.destination))
-    .pipe(connect.reload());
 });
 
 gulp.task('build', ['templates','pages','styles','scripts','images','fonts']);
