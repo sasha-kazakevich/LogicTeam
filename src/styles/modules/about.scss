@@ -1,13 +1,18 @@
-.about-block {
+.info-block {
     h2 {
-        color: #1A2E35;
+        font-family: 'Ubuntu-Medium';
+        color: #263238;
         text-transform: uppercase;
-        margin: 90px 0;
-    }  
+        padding: 90px 0;
+        margin: 0;
+        font-size: 24px;
+    }
     p {
-        color: #375A64;
-        font-size: 14px;
+        color: #455a64;
         line-height: 21px;
         margin-bottom: 25px;
-    }  
+    }
+    p:last-child {
+        margin-bottom: 0;
+    }
 }
