@@ -1,59 +1,95 @@
-.menu-block {
-    background-image: url('../img/menu-block/bg.png');
+.main-menu {
+    position: fixed;
+    width: 100%;
+    top: 0;
     color: #fff;
+    padding-top: 60px;
+    transition: all .2s ease-out;
+    z-index: 100;
 
-    &-menu {
+    .cont{
+        width: 1140px;
+        margin: 0 auto;
         display: flex;
-        justify-content: space-between;
         align-items: center;
-        margin: 66px 0 527px 0;
-    }
-}
-
-.menu-logo{
-    display: flex;
-
-    img{
-        width: 48px;
-        height: 48px;
-        margin-right: 40px;
     }
 
-    &-text {
-        font-family: 'Ubuntu-Light';
-        position: relative;
-        top: -4px;
+    .menu-logo{
+        display: flex;
+        padding: 0;
 
-        .medium {
-            font-family: 'Ubuntu-Medium';
-            font-size: 24px;
-            margin-bottom: 0;
+        .img{
+            width: 50px;
+            height: 50px;
+            background-image: url('../img/menu-block/log.png');
+            background-position: -5px -5px;
+            margin-right: 40px;
+        }
+
+        &-text {
+            font-family: 'Ubuntu-Light';
+            position: relative;
+            top: -4px;
+
+            .medium {
+                font-family: 'Ubuntu-Medium';
+                font-size: 24px;
+                margin-bottom: 0;
+            }
         }
     }
+
+    .menu-menu li {
+        display: inline-block;
+        margin: 0 10px;
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #0d47a1;
+        }
+    }
+
+    .menu-lang {
+        text-align: right;
+    }
 }
 
-.menu-menu li {
-    display: inline-block;
-    margin: 0 10px;
+.main-menu-scroll {
+    color: #0d47a1;
+    background-color: #fff;
+    padding-top: 30px;
 
-    a {
-        color: #fff;
-        text-decoration: none;
+    .menu-logo .img {
+        background-position: -65px -5px;
     }
-    a:hover {
+
+    .menu-menu li a {
         color: #0d47a1;
     }
 }
 
+.wrapper {
+    color: #fff;
+    background-image: url('../img/menu-block/bg.png');
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
 
 .menu-block-button {
-    margin-bottom: 54px;
+    position: fixed;
+    z-index: 100;
+    bottom: 190px;
 }
 
 .menu-block-footer {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 
     .footer-info-icon {
         padding-right: 27px;
