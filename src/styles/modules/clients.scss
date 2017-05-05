@@ -1,17 +1,8 @@
 .clients-block {
-    // h2 {
-    //     color: #1A2E35;
-    //     text-transform: uppercase;
-    //     margin-bottom: 60px;
-    //     margin-top: 40px;
-    //     font-size: 24px;
-    //         @media screen and (max-width: 320px) {
-    //                 font-size: 16px;
-    //                 font-weight: bold;
-    //                 margin-bottom: 30px;
-    //         }
-    // }
     ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         li {
             @media screen and (max-width: 320px) {
                         float: none;
@@ -20,7 +11,7 @@
             }
             a {
                 img {
-                    margin-top: 60px;
+                    // margin-top: 60px;
                         @media screen and (max-width: 320px) {
                                 width: 50%;
                                 margin: 25px 10px;
@@ -28,8 +19,9 @@
                 }
             }
         }
-        .ones {
-            padding-top: 15%;
-        }
+    }
+
+    .list-inline-margin {
+        margin-bottom: 90px;
     }
 }

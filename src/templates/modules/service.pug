@@ -1,13 +1,13 @@
 mixin service(data)
 	div.col-md-2.service-card
 		img(src= data.src)
-		p.name= data.name
+		p.name!= data.name
 		p.descript= data.descript
 
 section.container-fluid
 	section.service-block
 		div.row
-			each data in [{src: 'img/service/1.png',name:'автомобильные перевозки',descript:'Most designers set their type arbitrarily, either by pulling values out '},{src: 'img/service/2.png',name:'железнодорожные перевозки',descript:'Most designers set their type arbitrarily, either by pulling values out '},{src: 'img/service/3.png',name:'авиа перевозки',descript:'Most designers set their type arbitrarily, either by pulling values out '},{src: 'img/service/4.png',name:'морские перевозки',descript:'Most designers set their type arbitrarily, either by pulling values out '},{src: 'img/service/5.png',name:'мультимодальные перевозки',descript:'Most designers set their type arbitrarily, either by pulling values out '},{src: 'img/service/6.png',name:'сборные грузы',descript:'Most designers set their type arbitrarily, either by pulling values out '}]
+			each data in [{src: 'img/service/1.png',name:'автомобильные перевозки',descript:'Most designers set their type arbitrarily, either by pulling values out '},{src: 'img/service/2.png',name:'железнодорожные перевозки',descript:'Most designers set their type arbitrarily, either by pulling values out '},{src: 'img/service/3.png',name:'авиа <br/> перевозки',descript:'Most designers set their type arbitrarily, either by pulling values out '},{src: 'img/service/1.png',name:'морские <br/> перевозки',descript:'Most designers set their type arbitrarily, either by pulling values out '},{src: 'img/service/2.png',name:'мультимодальные перевозки',descript:'Most designers set their type arbitrarily, either by pulling values out '},{src: 'img/service/3.png',name:'сборные <br/> грузы',descript:'Most designers set their type arbitrarily, either by pulling values out '}]
 				+service(data)
 				
 //- section.container

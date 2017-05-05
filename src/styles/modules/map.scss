@@ -1,9 +1,9 @@
-.mmm {
+.map-block {
     padding: 0;
     position: relative;
 }
 
-.mapmap {
+.map-map {
     height: 500px;
 }
 
@@ -11,13 +11,21 @@
     width: 280px;
     background-color: #fff;
     position: absolute;
-    top: 80px;
-    right: 150px;
+    top: 40px;
+    right: 200px;
     border: 1px solid #c6c1ae;
-    padding: 20px 40px;
+    padding: 60px 30px;
     border-radius: 5px;
+
+    p {
+        margin-bottom: 28px;
+    }
+
+    p span {
+        color: #2196f3;
+    }
 }
-.nonnnne {
+.none-icon{
     width: 41px;
     height: 14px;
 }

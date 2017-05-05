@@ -2,6 +2,7 @@
   position: relative;
 
   width: 240px;
+  height: 60px;
 
   display: block;
   margin: 30px 0;
@@ -60,4 +61,14 @@
   padding-top: 120%;
 
   transition: width .2s ease-out, padding-top .2s ease-out;
+}
+
+.btnm-small {
+    width: 160px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.btnm-small span {
+    padding: 11px 0;
 }
