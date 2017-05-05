@@ -1,6 +1,8 @@
 .btnm {
   position: relative;
 
+  width: 240px;
+
   display: block;
   margin: 30px 0;
   padding: 0;
@@ -9,7 +11,7 @@
 
   border-width: 0;
   outline: none;
-  border-radius: 2px;
+  border-radius: 5px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
 
   background-color: #2196f3;

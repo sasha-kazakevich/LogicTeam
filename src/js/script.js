@@ -21,3 +21,14 @@ var map;
     map.behaviors.disable("scrollZoom");
     // map.controls.add("zoomControl").add("typeSelector");
 });
+
+let menu = document.getElementById('main-menu')
+
+window.addEventListener('scroll', function(e) {
+    if(menu.classList.contains('main-menu-scroll') && window.pageYOffset < 40) {
+        menu.classList.remove('main-menu-scroll');
+    }
+    if(window.pageYOffset > 40) {
+        menu.classList.add('main-menu-scroll');
+    }
+})
