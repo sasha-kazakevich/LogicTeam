@@ -1,0 +1,29 @@
+mixin naprevlenie3-column(item)
+	div.col-md-4
+		div.row.name-row
+			div.col-md-12
+				span.name=item.name
+		div.row.text-row
+			div.col-md-12
+				span.text=item.text
+	
+
+section.container
+	section.napravlenie3-block
+		div.row.title-row
+			div.col-md-12
+				span.title Авиа доставка из Китая
+		div.row.description-row
+			div.col-md-6
+				span.text Доставка груза из Китая является самым удобным способом перевозки коммерческих партий с широким ассортиментом Доставка груза из Китая является самым удобным способом перевозки коммерческих партий с широким ассортиментом
+			div.col-md-offset-4.col-md-2
+				img(src="img/napravlenie3/1.png")
+		div.row.block-3
+			div.col-md-12.title-row
+				span.title Наши преимущества
+			div.row
+				div.col-md-12
+					+naprevlenie3-column({name:'Груз из Китая-все включено',text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et lectus varius, feugiat risus in, facilisis metus.'})
+					+naprevlenie3-column({name:'Самая быстрая доставка из Китая',text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et lectus varius, feugiat risus in, facilisis metus.'})
+					+naprevlenie3-column({name:'Неизменность цены',text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et lectus varius, feugiat risus in, facilisis metus.'})
+
