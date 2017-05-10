@@ -1,0 +1,18 @@
+.directions-head-block {
+    color: #fff;
+    background: url(../../img/images/headimg.png);
+    .dir-text {
+        width: 48.1%;
+        padding: 70px 0 100px 0;
+        line-height: 21px;
+        h1 {
+            font-size: 24px;
+            text-transform: uppercase;
+            margin-bottom: 60px;
+        }
+        p {
+            font-size: 14px;
+            margin-top: 25px;
+        }
+    }
+}
