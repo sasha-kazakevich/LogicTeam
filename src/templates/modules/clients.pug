@@ -1,0 +1,22 @@
+mixin client(file, alt)
+    li: a(href="#"): img(src="img/clients-block/" + file alt=alt class!=attributes.class)
+
+section.container
+  section.clients-block.info-block
+    h2 Клиенты
+    ul.list-inline.list-inline-margin
+      +client("1.png", "one")
+      +client("2.png", "two")
+      +client("3.png", "three")
+      +client("4.png", "four")
+      +client("5.png", "five")
+      +client("6.png", "six")
+    ul.list-inline
+      +client("7.png", "seven")
+      +client("8.png", "eight")
+      +client("9.png", "nine")
+      +client("10.png", "ten")
+      +client("11.png", "eleven")
+      +client("12.png", "twelve")
+
+                

@@ -1,0 +1,47 @@
+.bluemap-block-all {
+    position: relative;
+    background-color: #0d47a1;
+}
+
+.bluemap-block {
+    color: #fff;
+}
+.bg-map {
+    width: 100%;
+}
+.map-head {
+    position: absolute;
+    top: 60px;
+    max-width: 1140px;
+    width: 100%;
+    h2 {
+        font-size: 24px;
+        margin-left: 0;
+        padding: 0;
+        width: 50%;
+        span {
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        @media screen and (max-width: 320px) {
+            font-size: 16px;
+            top: -20px;
+            width: 100%;
+        }
+    }
+    .partners {
+        margin-top: 25px;
+        float: right;
+        right: 0;
+        padding: 0;
+        width: 20%;
+        img {
+            margin-right: 20px;
+        }
+        @media screen and (max-width: 320px) {
+            font-size: 14px;
+            width: 100%;
+            margin-top: -10px;
+        }
+    }
+}

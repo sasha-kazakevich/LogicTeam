@@ -1,0 +1,17 @@
+.feedback-block{
+    .feedback {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 90px;
+        @media screen and (max-width: 320px) {
+                 flex-wrap: wrap;
+	             flex-direction: row;
+                 max-width: 320px;
+        }
+        img {
+            @media screen and (max-width: 320px) {
+                 max-height: 95px;
+             }
+        }
+    }
+}
