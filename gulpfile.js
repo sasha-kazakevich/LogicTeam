@@ -5,6 +5,7 @@ var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     rename = require('gulp-rename'),
     connect = require('gulp-connect'),
+    webpack = require('gulp-webpack'),
     gulpPugBeautify = require('gulp-pug-beautify');
 
 var config = {
@@ -80,6 +81,9 @@ gulp.task('styles', function () {
 
 gulp.task('scripts', function () {
   gulp.src(config.js.src)
+    .pipe(webpack({output: {
+        filename: '[name].js',
+    }}))
     .pipe(gulp.dest(config.js.destination))
     .pipe(connect.reload());
 });

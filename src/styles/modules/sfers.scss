@@ -1,11 +1,22 @@
-.sfers-block .sfers-title{
-	padding-top: 40px;
-	padding-bottom: 90px;
-	font-size:24px;
-	text-transform: uppercase;
-}
-.sfers-block .sfers-item{
-	height: 30px;
-	padding-bottom: 60px;
-	//border: 1px solid red;
+.sfers-block{
+
+	.title-row{
+		padding-bottom: 90px;
+	
+		.title{
+			font-size: 28px;
+			text-transform: uppercase;
+			padding-bottom: 90px;
+		}
+	}
+	
+	.item{
+		padding-bottom: 32px;
+	}
+	img{
+		min-height: 30px;
+	}
+	.name{
+		vertical-align: middle;
+	}
 }
