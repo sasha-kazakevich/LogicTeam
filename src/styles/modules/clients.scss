@@ -1,0 +1,27 @@
+.clients-block {
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        li {
+            @media screen and (max-width: 320px) {
+                        float: none;
+                        padding: 0;
+                        width: 30%;
+            }
+            a {
+                img {
+                    // margin-top: 60px;
+                        @media screen and (max-width: 320px) {
+                                width: 50%;
+                                margin: 25px 10px;
+                        }
+                }
+            }
+        }
+    }
+
+    .list-inline-margin {
+        margin-bottom: 90px;
+    }
+}

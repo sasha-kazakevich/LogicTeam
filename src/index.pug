@@ -8,9 +8,10 @@ html(lang="en")
     title Logistic
     
     link(rel="stylesheet" href="./css/main.css")
-      
-    script(src="js/script.js")
+
   body
-    div.container#content
-      //-include ./templates/main.pug
-      include ./templates/vacancies.pug
+    include ./templates/modules/main-menu.pug
+    section#content
+
+    script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+    script(src="js/main.js")
