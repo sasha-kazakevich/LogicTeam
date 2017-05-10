@@ -17,14 +17,18 @@
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-connect": "^4.0.0",
+    "gulp-install": "^1.1.0",
     "gulp-pug": "^3.3.0",
     "gulp-pug-beautify": "0.0.1",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-util": "^3.0.7",
+    "gulp-webpack": "^1.5.0",
     "webpack": "^2.2.0"
   },
   "dependencies": {
-    "bootstrap-sass": "^3.3.7"
+    "bootstrap-sass": "^3.3.7",
+    "jquery": "^3.2.1",
+    "page": "^1.7.1"
   }
 }
