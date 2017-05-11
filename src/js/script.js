@@ -1,3 +1,5 @@
+require('./routes/app');
+
 console.log('Ky');
 
 var map;

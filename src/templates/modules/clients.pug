@@ -1,22 +1,16 @@
-mixin client(file, alt)
-    li: a(href="#"): img(src="img/clients-block/" + file alt=alt class!=attributes.class)
+mixin client(data)
+    li: a(href="#"): img(src="img/clients-block/" + data.file alt=data.alt class!=attributes.class)
 
 section.container
   section.clients-block.info-block
     h2 Клиенты
     ul.list-inline.list-inline-margin
-      +client("1.png", "one")
-      +client("2.png", "two")
-      +client("3.png", "three")
-      +client("4.png", "four")
-      +client("5.png", "five")
-      +client("6.png", "six")
+        each data in [{file:'1.png',alt:'kronospan'},{file:'2.png',alt:'softform'},{file:'3.png',alt:'keramin'},{file:'4.png',alt:'grimme'},{file:'5.png',alt:'beloboi'},{file:'6.png',alt:'minskajatipographija'}]
+            +client(data)
     ul.list-inline
-      +client("7.png", "seven")
-      +client("8.png", "eight")
-      +client("9.png", "nine")
-      +client("10.png", "ten")
-      +client("11.png", "eleven")
-      +client("12.png", "twelve")
+        each data in [{file:'7.png',alt:'ami'},{file:'8.png',alt:'krone'},{file:'9.png',alt:'stroimatinstrument'},{file:'10.png',alt:'minskmetropoliten'},{file:'11.png',alt:'alutech'},{file:'12.png',alt:'industry'}]
+            +client(data)
+
+
 
                 
