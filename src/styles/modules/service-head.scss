@@ -1,0 +1,27 @@
+.service-head {
+    justify-content: center;
+    background: url('../img/services-page/bg.png');
+    background-size: cover;
+
+    .dir-text {
+        width: 48.1%;
+        padding-bottom: 90px;
+        line-height: 21px;
+        h1 {
+            font-size: 24px;
+            text-transform: uppercase;
+            margin-bottom: 60px;
+        }
+        p {
+            font-size: 14px;
+            margin-top: 25px;
+        }
+    }
+}
+.service-button {
+    bottom: 90px;
+}
+
+.service-text {
+    padding-bottom: 120px;
+}

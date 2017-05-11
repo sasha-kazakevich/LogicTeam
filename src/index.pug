@@ -7,10 +7,16 @@ html(lang="en")
       
     title Logistic
     
+    
     link(rel="stylesheet" href="./css/main.css")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-viewport-checker/1.8.7/jquery.viewportchecker.min.js")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous")
 
   body
-    //include ./templates/main.pug
-    //script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
-    //script(src="js/script.js")
-    include ./templates/services.pug
+    include ./templates/modules/main-menu.pug
+    section#content
+
+    script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+    script(src="js/main.js")
+    

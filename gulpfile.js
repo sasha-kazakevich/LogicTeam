@@ -5,6 +5,7 @@ var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     rename = require('gulp-rename'),
     connect = require('gulp-connect'),
+    webpack = require('gulp-webpack'),
     gulpPugBeautify = require('gulp-pug-beautify');
 
 var config = {
@@ -32,6 +33,10 @@ var config = {
   img: {
     src: './src/img/**',
     destination: 'dist/img'
+  },
+  video: {
+    src: './src/video/**',
+    destination: 'dist/video'
   },
   fonts: {
     src: './src/fonts/**',
@@ -80,6 +85,9 @@ gulp.task('styles', function () {
 
 gulp.task('scripts', function () {
   gulp.src(config.js.src)
+    .pipe(webpack({output: {
+        filename: '[name].js',
+    }}))
     .pipe(gulp.dest(config.js.destination))
     .pipe(connect.reload());
 });
@@ -94,10 +102,15 @@ gulp.task('images', function () {
     .pipe(gulp.dest(config.img.destination))
 });
 
+gulp.task('video', function () {
+  gulp.src(config.video.src)
+    .pipe(gulp.dest(config.video.destination))
+});
+
 gulp.task('fonts', function () {
   gulp.src(config.fonts.src)
     .pipe(gulp.dest(config.fonts.destination))
 });
 
-gulp.task('build', ['templates','pages','styles','scripts','images','fonts']);
+gulp.task('build', ['templates','pages','styles','scripts','images','video','fonts']);
 gulp.task('default',['build','connect','watch']);
