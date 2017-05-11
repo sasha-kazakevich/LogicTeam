@@ -68,6 +68,9 @@
     height: 40px;
     margin: 0 auto;
 }
+.btnm-small:hover, .btnm-small:focus {
+  background-color: #0d47a1;
+}
 
 .btnm-small span {
     padding: 11px 0;

@@ -58,6 +58,9 @@ var callback = {
           classToAdd: 'visible animated zoomIn',
           offset: 100
         });
+    },
+    directions: function(ctx,next) {
+        console.log('dir');
     }
 }
 
