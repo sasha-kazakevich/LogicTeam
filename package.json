@@ -29,6 +29,7 @@
   "dependencies": {
     "bootstrap-sass": "^3.3.7",
     "jquery": "^3.2.1",
+    "jquery-plugin-viewport-checker": "^1.8.3",
     "page": "^1.7.1"
   }
 }
