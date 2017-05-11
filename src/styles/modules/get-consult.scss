@@ -1,0 +1,41 @@
+.consult-block {
+	background: url('../../img/get-consult/person.png');
+    .right-half {
+        float: right;
+        padding: 0;
+        max-width: 540px;
+        margin-top: 90px;
+        color: #fff;
+        line-height: 21px;
+        h2 {
+            margin: 0 0 60px 0;
+            text-transform: uppercase;
+            font-family: 'Ubuntu-Medium';
+            font-size: 24px;
+        }
+        h3 {
+            margin: 0 0 30px 0;
+            text-transform: uppercase;
+            font-family: 'Ubuntu-Medium';
+            font-size: 14px;
+        }
+        p {
+            margin: 0;
+        }
+        .row {
+            max-width: 540px;
+            margin: 0;
+        }
+        button {
+            text-transform: uppercase;
+            margin: 180px 0 90px 0;
+            font-family: 'Ubuntu-Bold';
+        }
+    } 
+    
+}
+
+
+
+
+
