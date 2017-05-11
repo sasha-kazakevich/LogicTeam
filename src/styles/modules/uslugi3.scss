@@ -1,4 +1,7 @@
 .uslugi3-block{
+	.row {
+		margin: 0;
+	}
 	.title{
 		font-size: 22px;
 		text-transform: uppercase;
@@ -12,9 +15,13 @@
 	}
 	.img-left{
 		min-height: 120px;
+		max-width: 110px;
 	}
 	.arrow-row{
 		padding-top: 40px;
+	}
+	.info-row {
+		padding-bottom: 50px;
 	}
 	.to-row{
 		padding-top: 30px;

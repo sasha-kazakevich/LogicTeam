@@ -61,6 +61,43 @@ var callback = {
     },
     directions: function(ctx,next) {
         console.log('dir');
+    },
+    services: function(ctx,next) {
+        $('.point-belarus').viewportChecker({
+          classToRemove: 'invisible',
+          classToAdd: 'visible animated zoomIn',
+          offset: 100
+        });
+
+        $('.point-usa').viewportChecker({
+          classToRemove: 'invisible',
+          classToAdd: 'visible animated zoomIn',
+          offset: 100
+        });
+
+        $('.point-germany').viewportChecker({
+          classToRemove: 'invisible',
+          classToAdd: 'visible animated zoomIn',
+          offset: 100
+        });
+
+        $('.point-russia').viewportChecker({
+          classToRemove: 'invisible',
+          classToAdd: 'visible animated zoomIn',
+          offset: 100
+        });
+
+        $('.point-india').viewportChecker({
+          classToRemove: 'invisible',
+          classToAdd: 'visible animated zoomIn',
+          offset: 100
+        });
+
+        $('.point-china').viewportChecker({
+          classToRemove: 'invisible',
+          classToAdd: 'visible animated zoomIn',
+          offset: 100
+        });
     }
 }
 
