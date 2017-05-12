@@ -1,5 +1,5 @@
 mixin feed(data)
-  img(src="img/feedback-block/" + data.file alt=data.alt class!=attributes.class)
+  img(src="img/feedback-block/" + data.file alt=data.alt class!=attributes.class data-toggle="modal" data-target="#modalImg")
 section.container
   section.feedback-block.info-block
     h2 Отзывы

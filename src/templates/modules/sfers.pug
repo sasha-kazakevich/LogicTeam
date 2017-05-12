@@ -1,32 +1,21 @@
-mixin sfers_column(imgs,names)
-	div.col-md-4.sfers-column
-		div.col-md-12.sfers-item
-			div.col-md-2
-				image(src='../../img/sfers-img-'+imgs[0]+'.png')
-			div.col-md-10
-				span.sfers-name=names[0]
-		div.col-md-12.sfers-item
-			div.col-md-2
-				image(src='../../img/sfers-img-'+imgs[1]+'.png')
-			div.col-md-10
-				span.sfers-name=names[1]
-		div.col-md-12.sfers-item
-			div.col-md-2
-				image(src='../../img/sfers-img-'+imgs[2]+'.png')
-			div.col-md-10
-				span.sfers-name=names[2]
-		div.col-md-12.sfers-item
-			div.col-md-2
-				image(src='../../img/sfers-img-'+imgs[3]+'.png')
-			div.col-md-10
-				span.sfers-name=names[3]
+mixin sfers_item(item)
+	div.row.item
+		div.col-md-12
+			div.row
+				div.col-md-2
+					img.image(src='img/sfers/'+item.src+'.png')
+				div.col-md-10
+					span.name=item.name
 
+mixin sfers_column(items)
+	div.col-md-4
+		each oneItem in items
+			+sfers_item(oneItem)
 
 section.container
 	section.sfers-block.info-block
-		h2 Cферы деятельности
-		.row
-			+sfers_column(['1','4','7','10'],['Автомобильная','Алкогольная','Деревообрабатывающая','Индустрия моды'])
-			+sfers_column(['2','5','8','11'],['Машиностроение	','Оптово и розничная торговля','Сельхоз техника','Техника и электроника'])
-			+sfers_column(['3','6','9','12'],['Товары народного потребления','Фармацевтическая','Химическая','Целлюлозно-бумажная'])
-			
+		h2 сферы деятельности
+		div.row
+			+sfers_column([{src:'1',name:'Автомобильная'},{src:'2',name:'Алкогольная'},{src:'3',name:'Деревообрабатывающая'},{src:'4',name:'Индустрия моды'}])
+			+sfers_column([{src:'5',name:'Машиностроение'},{src:'6',name:'Оптово розничная торговля'},{src:'7',name:'Сельхоз техника'},{src:'8',name:'Техника и электроника'}])
+			+sfers_column([{src:'9',name:'Товары народного потребление'},{src:'10',name:'Фармацевтическая'},{src:'11',name:'Химическая'},{src:'12',name:'Целлюлозно-бумажная'}])
