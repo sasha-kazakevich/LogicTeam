@@ -41,6 +41,9 @@
     padding: 25px 12px;
     color: #455a64;
 }
+.form-control:focus {
+    box-shadow: none !important;
+}
 .input-group-addon {
     background-color: #e8eaf6;
     border: none;

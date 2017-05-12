@@ -1,0 +1,28 @@
+.form-con {
+    width: 752px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    color: #455a64;
+
+    label {
+        color: #455a64;
+    }
+
+    .contacts-form {
+        width: 320px;
+    }
+}
+
+.contact-head {
+    overflow: hidden;
+}
+
+.contact-map {
+    padding: 28px;
+    top: 150px;
+    left: 160px;
+    p {
+        color: #b0bec5;
+    }
+}

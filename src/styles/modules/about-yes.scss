@@ -1,6 +1,8 @@
 .about-yes-block {
+    background: url('../img/about-yes/pattern.png');
+    background-size: cover;
+    margin: 88px 0;
     .yes-block {
-        background: url('img/about-yes/pattern.png');
         padding: 0;
         h2 {
             margin: 110px 0;
@@ -20,5 +22,5 @@
             background-color: #0D47A1;
             color: #fff;
         }
-    } 
+    }
 }

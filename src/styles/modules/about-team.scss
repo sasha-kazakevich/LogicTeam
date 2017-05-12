@@ -1,5 +1,9 @@
 .team-block {
     padding: 0;
+
+    .min-margin {
+        padding: 40px 0 90px 0;
+    }
     .team {
         padding: 0;
     }
@@ -39,12 +43,12 @@
                     padding: 2px 0 0 0;
                     margin-right: 15px;
                     max-width: 15px;
-                } 
+                }
                 p {
                     margin-bottom: 25px;
                 }
             }
-        } 
+        }
     }
     .t-item:nth-child(2n){
         float: right;

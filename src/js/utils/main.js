@@ -120,6 +120,38 @@ var callback = {
             map.behaviors.disable("scrollZoom");
             // map.controls.add("zoomControl").add("typeSelector");
         });
+    },
+    about: function(ctx,next){
+        console.log('about');
+    },
+    vacancies: function(ctx,next){
+        console.log('Vacancies');
+    },
+    online: function(ctx,next) {
+        console.log('online');
+    },
+    contacts: function(ctx,next){
+        var map;
+
+            ymaps.ready(function(){
+
+            var placemark = new ymaps.Placemark([53.890128, 27.536903],{
+                hintContent: 'логистик'
+            },
+            {
+                preset: 'twirl#redDotIcon'
+            });
+
+            map = new ymaps.Map(document.getElementById('map'), {
+                center: [53.890128, 27.536903],
+                zoom: 16,
+                controls: [],
+                behaviors: ["scrollZoom"]
+            });
+            map.geoObjects.add(placemark);
+            map.behaviors.disable("scrollZoom");
+            // map.controls.add("zoomControl").add("typeSelector");
+        });
     }
 }
 
