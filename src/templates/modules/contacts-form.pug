@@ -1,7 +1,8 @@
 section.container
   section.form-con
+    h2 написать письмо
     .form-row
-      input.form-control(type='text', placeholder='Примечание')
+      input.form-control(type='text', placeholder='Тема письма')
     .form-row
       .input-group.contacts-form
         span#basic-addon1.input-group-addon
@@ -10,7 +11,7 @@ section.container
       .input-group.contacts-form
         span#basic-addon1.input-group-addon
           img(src="img/forma/mail.png" alt="log" width="20" height="16")
-        input.form-control(type='text', placeholder='Сообщение', aria-describedby='basic-addon1')
+        textarea.form-control(wrap="soft", type='text', placeholder='Сообщение', aria-describedby='basic-addon1' contenteditable="true")
     .form-row
       .input-group.contacts-form
         span#basic-addon1.input-group-addon
@@ -27,10 +28,10 @@ section.container
           img(src="img/forma/mail.png" alt="log" width="20" height="16")
         input.form-control(type='text', placeholder='Электронная почта', aria-describedby='basic-addon1')
     .form-row.justify
-      .secur
+      .security
         span.icon-un
           img(src="img/forma/zm.png" alt="log" width="20" height="27")
-        span Данные не передаются третьим лицам
+        span.security__title Данные не передаются третьим лицам
       button.btnm.btnm-form(type="button")
         span ОТПРАВИТЬ
     

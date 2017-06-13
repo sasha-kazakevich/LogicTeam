@@ -21,11 +21,13 @@
         margin-bottom: 28px;
     }
 
-    p span {
+    &__info-icon {
+        margin-right: 25px;
         color: #2196f3;
     }
-}
-.none-icon{
-    width: 41px;
-    height: 14px;
+
+    &__none-icon{
+        width: 41px;
+        height: 14px;
+    }
 }

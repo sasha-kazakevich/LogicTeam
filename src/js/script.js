@@ -1,6 +1,6 @@
-require('./routes/app');
+const $ = require('jquery');
 
-console.log('Ky');
+require('./routes/app');
 
 var map;
 

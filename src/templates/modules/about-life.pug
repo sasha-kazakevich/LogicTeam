@@ -1,19 +1,17 @@
 section.container-fluid
   .container.info-block
     h2 жизнь в офисе
-  #carousel.carousel.slide(data-ride='carousel')
-    .container
-      .carousel-inner
-          .item.active
-            .img
-              img(src="img/about-page/s1.png")
-          .item
-            .img
-              img(src="img/about-page/s1.png")
-          .item
-            .img
-              img(src="img/about-page/s1.png")
-    a.left.carousel-control(href='#carousel', role='button', data-slide='prev')
-      span.glyphicon.glyphicon-chevron-left
-    a.right.carousel-control(href='#carousel', role='button', data-slide='next')
-      span.glyphicon.glyphicon-chevron-right
+    
+  .swiper-container
+    .swiper-wrapper
+        .swiper-slide 
+          img(src="img/about/about-life/s1.png")
+        .swiper-slide
+          img(src="img/about/about-life/s1.png")
+        .swiper-slide
+          img(src="img/about/about-life/s1.png")
+        .swiper-slide
+          img(src="img/about/about-life/s1.png")
+        .swiper-slide
+          img(src="img/about/about-life/s1.png")
+    .swiper-pagination
